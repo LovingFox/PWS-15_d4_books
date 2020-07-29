@@ -3,9 +3,9 @@
 </head>
 <body>
 Всего издательств {{ publishers|length }}:
-<ul>
+<ul class="list-group">
 	{% for publisher in publishers %}
-	<li>{{ publisher.name }} ({{ publisher.books }})</li>
+	<li class="list-group-item">{{ publisher.name }} ({{ publisher.books }})</li>
 	{% endfor %}
 </ul>
 </body>
